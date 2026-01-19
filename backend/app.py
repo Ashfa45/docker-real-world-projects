@@ -15,6 +15,6 @@ def hello():
     cursor = conn.cursor()
     cursor.execute("SELECT NOW()")
     result = cursor.fetchone()
-    return f"Hello! DB Time: {result[0]}"
+    return f"Hello from Jenkins CICD"
 
 app.run(host="0.0.0.0", port=5000)
