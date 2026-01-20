@@ -15,6 +15,6 @@ def hello():
     cursor = conn.cursor()
     cursor.execute("SELECT NOW()")
     result = cursor.fetchone()
-    return f"Hello from Jenkins CICD"
+    return f"Hello from Jenkins CICD and Docker"
 
 app.run(host="0.0.0.0", port=5000)
